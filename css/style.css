@@ -1,0 +1,166 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  max-width: 100%;
+  max-height: 100%;
+  background: rgba(165, 193, 192, 0.075);
+}
+
+.nav-item,
+.nav-item > a {
+  text-transform: uppercase;
+  font-family: "Hind Siliguri", "Consolas", "Verdana", "Trebuchet MS", "Arial", "sans-serif";
+  color: #fff;
+}
+.nav-item:hover, .nav-item:hover > a,
+.nav-item > a:hover,
+.nav-item > a:hover > a {
+  color: #a5c1c0;
+  font-weight: 500;
+}
+
+.dropdown-content a {
+  color: #a5c1c0;
+  font-weight: 300;
+}
+
+.dropdown-item:hover a {
+  letter-spacing: 0.75px;
+  transition: 0.5s ease;
+  color: #87acab;
+}
+
+nav {
+  margin: 1rem;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-item {
+  padding: 10px 17px;
+  margin: 0 1rem;
+  background-color: #a5c1c0;
+  border: 0 solid #a5c1c0;
+  transition: 0.35s ease-in;
+}
+.nav-item:hover {
+  background-color: #fff;
+  border-left: 10px solid #a5c1c0;
+  border-right: 10px solid #a5c1c0;
+  border-top: 1px solid #a5c1c0;
+  border-bottom: 1px solid #a5c1c0;
+  padding: 9px 17px;
+}
+
+.dropdown {
+  position: relative;
+}
+.dropdown:after {
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  content: "⏶";
+  opacity: 0.85;
+}
+.dropdown-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  top: 35px;
+  left: -10px;
+  border-left: 1px solid #a5c1c0;
+  border-right: 1px solid #a5c1c0;
+  border-bottom: 1px solid #a5c1c0;
+  background: rgba(255, 255, 255, 0.75);
+  height: 0;
+  opacity: 0;
+  visibility: hidden;
+  overflow: hidden;
+  transition: all 0.35s ease;
+}
+.dropdown:hover .dropdown-content {
+  height: initial;
+  visibility: visible;
+  overflow: auto;
+  opacity: 1;
+  width: calc(100% + 20px);
+}
+.dropdown-item {
+  padding: 10px 5px;
+  width: 100%;
+  text-align: center;
+}
+.dropdown-item:hover {
+  background: rgba(165, 193, 192, 0.125);
+}
+
+/*# sourceMappingURL=style.css.map */

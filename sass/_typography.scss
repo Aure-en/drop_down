@@ -1,0 +1,26 @@
+.nav-item,
+.nav-item > a {
+  text-transform: uppercase;
+  font-family: $font-family;
+  color: $color-secondary;
+
+  &:hover,
+  &:hover > a {
+    color: $color-primary;
+    font-weight: 500;
+  }
+
+}
+
+.dropdown-content {
+  a {
+    color: $color-primary;
+    font-weight: 300;
+  }
+}
+
+.dropdown-item:hover a {
+  letter-spacing: .75px;
+  transition: 0.5s ease;
+  color: darken($color-primary, 10%);
+}

@@ -1,0 +1,12 @@
+$font-family: 'Hind Siliguri', 'Consolas', 'Verdana', 'Trebuchet MS', 'Arial', 'sans-serif';
+$color-primary: #a5c1c0;
+$color-secondary: #fff;
+$color-background: #ecf2f3;
+$sides-x: left, right;
+$sides-y: top, bottom;
+
+@mixin border($directions, $size) {
+  @each $direction in $directions {
+    border-#{$direction}: #{$size}px solid $color-primary;
+  }
+}
